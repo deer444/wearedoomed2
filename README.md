@@ -1,1 +1,1 @@
-# wearedoomed2
+https://deer444.github.io/wearedoomed2/
