@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shop — WeAreDoomed</title>
+<title>рок банды</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/
 bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
@@ -12,29 +12,26 @@ bootstrap.min.css" rel="stylesheet">
 <!-- header as before -->
 <header class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
-5
 <a class="navbar-brand" href="index.html"><img src="images/logo.png"
-width="36" height="36" class="me-2">WeAreDoomed</a>
+width="36" height="36" class="me-2">рок банды</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse" id="mainNav">
 <ul class="navbar-nav ms-auto nav-list">
-<li class="nav-item"><a class="nav-link" href="index.html" datalink>Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html" datalink>About</a></li>
-<li class="nav-item"><a class="nav-link" href="shop.html" datalink>Shop</a></li>
-<li class="nav-item"><a class="nav-link" href="order.html" datalink>Order</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html" datalink>домой</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html" datalink>о</a></li>
+<li class="nav-item"><a class="nav-link" href="shop.html" datalink>базар</a></li>
+<li class="nav-item"><a class="nav-link" href="order.html" datalink>заказать заказ</a></li>
 </ul>
 </div>
 </div>
 </header>
 <main class="container mt-4">
 <h1>Shop</h1>
-<p>Каталог товаров/альбомов. Элементы генерируются JavaScript (6–12
-итераций). Контент повторяющийся — карточки с миниатюрой, названием и кнопкой
-заказа.</p>
+<p>каталожек</p>
 <div class="row" id="catalog"></div>
 </main>
-<footer class="bg-dark text-light py-3 mt-5"><div class="container textcenter">&copy; 2025 WeAreDoomed</div></footer>
+<footer class="bg-dark text-light py-3 mt-5"><div class="container textcenter">&copy; рок </div></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/
 bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
@@ -43,15 +40,14 @@ bootstrap.bundle.min.js"></script>
 needed
 (function(){
 const items = [
-{id:1, title:'Album I', price:12.99, img:'images/thumb1.jpg'},
-{id:2, title:'Album II', price:10.50, img:'images/thumb2.jpg'},
-{id:3, title:'T-Shirt', price:20.00, img:'images/thumb3.jpg'},
-{id:4, title:'Poster', price:5.00, img:'images/thumb4.jpg'},
-{id:5, title:'Vinyl', price:25.00, img:'images/thumb5.jpg'},
-{id:6, title:'CD Deluxe', price:15.00, img:'images/thumb6.jpg'},
-{id:7, title:'Cap', price:8.00, img:'images/thumb2.jpg'},
-{id:8, title:'Sticker pack', price:3.50, img:'images/thumb1.jpg'}
-6
+{id:1, title:'Album I', price:12.99, img:'images/ROCK1.jpg'},
+{id:2, title:'Album II', price:10.50, img:'images/dom.jpg'},
+{id:3, title:'T-Shirt', price:20.00, img:'images/domm.jpg'},
+{id:4, title:'Poster', price:5.00, img:'images/queen.jpg'},
+{id:5, title:'Vinyl', price:25.00, img:'images/rock.jpg'},
+{id:6, title:'CD Deluxe', price:15.00, img:'images/rocking.jpg'},
+{id:7, title:'Cap', price:8.00, img:'images/the.beatles.jpg'},
+{id:8, title:'Sticker pack', price:3.50, img:'rock.jpg'}
 ];
 const container = document.getElementById('catalog');
 items.forEach(it => {
