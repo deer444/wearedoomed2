@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order — WeAreDoomed</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/
+bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="order">
+<!-- header -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html"><img src="images/logo.png"
+width="36" height="36" class="me-2">WeAreDoomed</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav">
+7
+<ul class="navbar-nav ms-auto nav-list">
+<li class="nav-item"><a class="nav-link" href="index.html" datalink>Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html" datalink>About</a></li>
+<li class="nav-item"><a class="nav-link" href="shop.html" datalink>Shop</a></li>
+<li class="nav-item"><a class="nav-link" href="order.html" datalink>Order</a></li>
+</ul>
+</div>
+</div>
+</header>
+<main class="container mt-4">
+<h1>Order form</h1>
+<p>Форма отправляет данные на <code>https://httpbin.org/post</code>
+(тестовый удалённый сервер). Поля: text, number, radio — значения по умолчанию
+не пустые.</p>
+<form id="order-form" action="https://httpbin.org/post" method="post"
+target="_blank">
+<div class="mb-3">
+<label for="customer_name" class="form-label">Name</label>
+<input type="text" id="customer_name" name="customer_name" class="formcontrol" value="Ivan Ivanov" required>
+</div>
+<div class="mb-3">
+<label for="quantity" class="form-label">Quantity</label>
+<input type="number" id="quantity" name="quantity" class="form-control"
+min="1" max="100" value="1" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Delivery</label><br>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="delivery"
+id="del_pickup" value="pickup" checked>
+<label class="form-check-label" for="del_pickup">Pickup</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="delivery"
+id="del_courier" value="courier">
+<label class="form-check-label" for="del_courier">Courier</label>
+</div>
+</div>
+<!-- hidden defaults that aren't empty -->
+<input type="hidden" name="campaign" value="doom-summer-2025">
+8
+<button class="btn btn-primary" type="submit">Send order</button>
+</form>
+</main>
+<footer class="bg-dark text-light py-3 mt-5"><div class="container textcenter">&copy; 2025 WeAreDoomed</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/
+bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
